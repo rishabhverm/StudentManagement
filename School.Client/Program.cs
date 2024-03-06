@@ -40,6 +40,7 @@ app.UseRouting();
 
 // Use CORS middleware
 app.UseCors("AllowAll");
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
